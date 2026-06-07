@@ -2,6 +2,7 @@ mod basico;
 mod ownership;
 mod mods;
 mod paradigma;
+mod macros;
 use std::io;
 fn main() {
     
@@ -23,6 +24,7 @@ fn main() {
     println!("13 - Testes");
     println!("14 - Ferramentas e Ecossistema");
     println!("15 - Sair");
+    println!("Digite o número correspondente ao tópico desejado: ");
     io::stdin().read_line(&mut op).expect("Failed to read line");
     let op = op.trim().parse::<i32>().expect("Failed to parse number");
         match op {
@@ -34,12 +36,13 @@ fn main() {
             6 => mods::modulos_e_pacotes(),
             7 => paradigma::programacao_funcional(),
             8 => paradigma::programacao_orientada_a_objetos(),
+            12 => macros::macros(),
             /*5 => estruturas_de_dados(),
             8 => concorrencia(),
             9 => manipulacao_de_arquivos(),
             ,
             
-            12 => macros(),
+
             13 => testes(),
             14 => ferramentas_e_ecossistema(),*/
             15 => println!("Saindo..."),
