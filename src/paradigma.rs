@@ -56,7 +56,7 @@ pub fn programacao_funcional(){
     let resultado = aplicar_operacao(5, 3, soma);
     println!("Resultado da soma: {}", resultado);
 
-    let numeros = vec![1, 2, 3, 4, 5];
+    let numeros = [1, 2, 3, 4, 5];
     let quadrados: Vec<i32> = numeros.iter().map(|x| x * x).collect(); // Usando iterador para calcular quadrados
     println!("Quadrados dos números: {:?}", quadrados);
 }
