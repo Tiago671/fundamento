@@ -1,6 +1,7 @@
 mod basico;
 mod ownership;
 mod mods;
+mod paradigma;
 use std::io;
 fn main() {
     
@@ -31,11 +32,13 @@ fn main() {
             4 => basico::funcoes(),
             5 => ownership::propriedade_e_emprestimo(),
             6 => mods::modulos_e_pacotes(),
+            7 => paradigma::programacao_funcional(),
+            8 => paradigma::programacao_orientada_a_objetos(),
             /*5 => estruturas_de_dados(),
             8 => concorrencia(),
             9 => manipulacao_de_arquivos(),
-            10 => programacao_orientada_a_objetos(),
-            11 => programacao_funcional(),
+            ,
+            
             12 => macros(),
             13 => testes(),
             14 => ferramentas_e_ecossistema(),*/
