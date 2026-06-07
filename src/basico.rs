@@ -1,6 +1,10 @@
 
 pub fn variaveis_e_tipos(){
     println!("Fundamentos de Rust - Variáveis e Tipos de Dados");
+    println!("Em Rust,para criar uma variável, usamos a palavra-chave 'let'. Por padrão, as variáveis são imutáveis, o que significa que seu valor não pode ser alterado após a atribuição. Para criar uma variável mutável, é necessário usar a palavra-chave 'mut'.");
+    println!("Também é possível usa a palavra-chave 'const' para criar constantes, que são imutáveis e devem ser inicializadas com um valor constante conhecido em tempo de compilação.");
+    println!("Outra forma, é usar a palavra-chave 'static' para criar variáveis estáticas, que têm um tempo de vida durante toda a execução do programa e são imutáveis por padrão, mas podem ser mutáveis se declaradas com 'mut'.");
+    println!("Tipos de Dados em Rust:");
     println!("Interger ==> i8, i16, i32, i64, i128, isize");
     println!("Unsigned Integer ==> u8, u16, u32, u64, u128, usize");
     println!("Floating Point ==> f32, f64");
@@ -8,6 +12,7 @@ pub fn variaveis_e_tipos(){
     println!("Character ==> char");
     println!("String ==> String, &str");
     println!("Exemplos de variáveis e tipos de dados:");
+    {
     let mut x: i32 = 5; // Variável mutável do tipo inteiro
     println!("Valor i32 de x mutável: {}", x);
     x = 10; // Modificando o valor de x
@@ -26,6 +31,7 @@ pub fn variaveis_e_tipos(){
     println!("Valor String de nome_completo: {}", nome_completo);
     nome_completo.push_str(" Silva"); // Modificando o valor de nome_completo
     println!("Valor String de nome_completo após modificação: {}", nome_completo);
+    }
 
 }
 
@@ -80,8 +86,8 @@ pub fn operadores(){
 pub fn controle_de_fluxo(){
     println!("Fundamentos de Rust - Controle de Fluxo");
     println!("Estruturas de controle de fluxo: if, else, else if, match, loop, while, for");
-    println!("Exemplos de controle de fluxo:");
     
+    {
     let numero = 10;
 
     // Estrutura if
@@ -123,12 +129,16 @@ pub fn controle_de_fluxo(){
         println!("Contador for: {}", i);
     }
 }
+}
 
 pub fn funcoes(){
     println!("Fundamentos de Rust - Funções");
     println!("Definição de funções, parâmetros, retorno, funções anônimas (closures)");
+    println!("Em Rust, as funções são definidas usando a palavra-chave 'fn', seguida pelo nome da função e uma lista de parâmetros entre parênteses. O corpo da função é delimitado por chaves. As funções podem retornar um valor usando a palavra-chave 'return' ou simplesmente colocando o valor a ser retornado como a última expressão do corpo da função.");
+    println!("Funções anônimas, ou closures, são funções que podem ser definidas sem um nome e podem capturar variáveis do ambiente em que foram criadas. Elas são úteis para criar funções de curto prazo ou para passar como argumentos para outras funções.");
+
     println!("Exemplos de funções:");
-    
+    {
     // Função simples
     fn saudacao() {
         println!("Olá, seja bem-vindo ao Rust!");
@@ -148,4 +158,5 @@ pub fn funcoes(){
     };
     let resultado_multiplicacao = multiplicacao(4, 6);
     println!("Resultado da multiplicação: {}", resultado_multiplicacao);
+}
 }
