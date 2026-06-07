@@ -30,4 +30,5 @@ pub fn macros(){
     };
     println!("{:?}", minha_struct);
     println!("{:?}", minha_struct.clone());
+    println!("{} - {}", minha_struct.campo1, minha_struct.campo2);
 }
