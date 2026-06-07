@@ -3,6 +3,7 @@ mod ownership;
 mod mods;
 mod paradigma;
 mod macros;
+mod tiposRuntime;
 use std::io;
 fn main() {
     
@@ -37,8 +38,9 @@ fn main() {
             7 => paradigma::programacao_funcional(),
             8 => paradigma::programacao_orientada_a_objetos(),
             12 => macros::macros(),
+            13 => tiposRuntime::concorrencia(),
             /*5 => estruturas_de_dados(),
-            8 => concorrencia(),
+            
             9 => manipulacao_de_arquivos(),
             ,
             
