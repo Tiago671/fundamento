@@ -3,7 +3,9 @@ mod ownership;
 mod mods;
 mod paradigma;
 mod macros;
-mod tiposRuntime;
+mod tipos_runtime;
+mod testes;
+
 use std::io;
 fn main() {
     
@@ -38,14 +40,15 @@ fn main() {
             7 => paradigma::programacao_funcional(),
             8 => paradigma::programacao_orientada_a_objetos(),
             12 => macros::macros(),
-            13 => tiposRuntime::concorrencia(),
+            13 => tipos_runtime::concorrencia(),
+            14 => testes::testes(),
             /*5 => estruturas_de_dados(),
             
             9 => manipulacao_de_arquivos(),
             ,
             
 
-            13 => testes(),
+            
             14 => ferramentas_e_ecossistema(),*/
             15 => println!("Saindo..."),
             _ => println!("Opção inválida"),
